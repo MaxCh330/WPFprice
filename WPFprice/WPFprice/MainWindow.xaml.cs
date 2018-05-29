@@ -58,5 +58,26 @@ namespace WPFprice
                 totalPrice.Text = CtotalPrice.ToString();
             }
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            // 開檔
+            string[] lines = System.IO.File.ReadAllLines(@"C:\temp\data.txt");
+​
+           // 分析每一行
+        foreach (string line in lines)
+            {
+                // 用 | 符號拆開
+                string[] parts = line.Split('|');
+​
+        // 建立 TodoItem
+        item item = new item();
+        item.day.Text = parts[1];
+                
+​​
+        // 放到清單中
+        TotoItemList.Children.Add(item);
+            }
+        }
     }
 }
