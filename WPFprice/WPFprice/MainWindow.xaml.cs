@@ -64,19 +64,21 @@ namespace WPFprice
             // 開檔
             string[] lines = System.IO.File.ReadAllLines(@"C:\temp\data.txt");
 ​
-           // 分析每一行
-        foreach (string line in lines)
+            // 分析每一行
+            foreach (string line in lines)
             {
                 // 用 | 符號拆開
                 string[] parts = line.Split('|');
 ​
-        // 建立 TodoItem
-        item item = new item();
-        item.day.Text = parts[1];
+                // 建立 TodoItem
+                item item = new item();
+                item.day.Text = parts[0];
+                item.itemName.Text = parts[1];
+                item.itemPrice.Text = parts[2];
                 
 ​​
-        // 放到清單中
-        TotoItemList.Children.Add(item);
+                // 放到清單中
+                toDoList.Children.Add(item);
             }
         }
     }
