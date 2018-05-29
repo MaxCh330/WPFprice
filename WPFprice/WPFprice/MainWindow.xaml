@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFprice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFprice"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="300" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+
+        <StackPanel x:Name="toDoList" Grid.Row="1"></StackPanel>
+
+
+
+        <Grid Grid.Row="2">
+            <Button Width="60" Content="add" Click="addbutton_Click" x:Name="addbutton"></Button>
+        </Grid>
+    </Grid>
+</Window>

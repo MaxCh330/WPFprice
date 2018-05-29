@@ -1,0 +1,17 @@
+c:\users\asdfg\source\repos\WPFprice\WPFprice\bin\Debug\WPFprice.exe.config
+c:\users\asdfg\source\repos\WPFprice\WPFprice\bin\Debug\WPFprice.exe
+c:\users\asdfg\source\repos\WPFprice\WPFprice\bin\Debug\WPFprice.pdb
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.csprojAssemblyReference.cache
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\item.g.cs
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\MainWindow.g.cs
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\App.g.cs
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice_MarkupCompile.cache
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice_MarkupCompile.lref
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\item.baml
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\MainWindow.baml
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.g.resources
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.Properties.Resources.resources
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.csproj.GenerateResource.cache
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.csproj.CoreCompileInputs.cache
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.exe
+c:\users\asdfg\source\repos\WPFprice\WPFprice\obj\Debug\WPFprice.pdb
