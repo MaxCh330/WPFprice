@@ -29,12 +29,25 @@ namespace WPFprice
        {
             get
             {
-                return int.Parse(itemPrice.Text);
+                try
+                {
+                    return int.Parse(itemPrice.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Plese enter the number");
+                    return 0;
+                }
             }
             set
             {
                 itemPrice.Text = value.ToString();
             }
        }
+
+        private void itemPrice_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+
+        }
     }
 }

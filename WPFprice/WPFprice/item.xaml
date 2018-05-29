@@ -16,14 +16,14 @@
 
         <!-- 日期框 -->
         <Grid Grid.Column="0" Background="Transparent">
-            <TextBox Margin="5" x:Name="day" Foreground="Gray" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">5/6</TextBox>
+            <TextBox Margin="5" x:Name="day" Foreground="Gray" BorderThickness="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">Day</TextBox>
         </Grid>
 
         <!-- 輸入框 -->
         <TextBox x:Name="itemName" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" BorderThickness="0">New Task</TextBox>
 
         <!-- 價錢框 -->
-        <TextBox x:Name="itemPrice" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" BorderThickness="0" Margin="0" ></TextBox>
+        <TextBox x:Name="itemPrice" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" BorderThickness="0" Margin="5 5 10 5" Foreground="SkyBlue" DataContextChanged="itemPrice_DataContextChanged" >0</TextBox>
 
     </Grid>
 </UserControl>

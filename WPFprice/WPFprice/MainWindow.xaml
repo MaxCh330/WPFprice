@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFprice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="300" Closed="Window_Closed">
+        Title="MainWindow" Height="500" Width="300" Closed="Window_Closed" KeyDown="Window_KeyDown_1">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
 
 
@@ -19,8 +19,12 @@
 
 
 
-        <Grid Grid.Row="2">
-            <Button Width="60" Content="add" Click="addbutton_Click" x:Name="addbutton"></Button>
+        <Grid Grid.Row="2" Background="SteelBlue">
+            <Button Width="30" Height="30" HorizontalAlignment="Left" Margin="5" x:Name="add" Click="addbutton_Click" ></Button>
+            <StackPanel Width="150" HorizontalAlignment="Right" Orientation="Vertical" Height="49">
+                <TextBlock HorizontalAlignment="Right" Height="15" Margin="5 5 10 0" FontSize="12" Foreground="White">總支出</TextBlock>
+                <TextBlock HorizontalAlignment="Right" Height="25" FontSize="20" Margin="0 2 10 0" Foreground="White" x:Name="totalPrice" >0</TextBlock>
+            </StackPanel>
         </Grid>
     </Grid>
 </Window>

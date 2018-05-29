@@ -45,5 +45,18 @@ namespace WPFprice
 
             System.IO.File.WriteAllText(@"D:\SaveDataTest", data);
         }
+
+        private void Window_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            int CtotalPrice = 0;
+            if (e.Key == Key.Return)
+            {
+                foreach (item item in toDoList.Children)
+                {
+                    CtotalPrice += item.itemPriceValue;
+                }
+                totalPrice.Text = CtotalPrice.ToString();
+            }
+        }
     }
 }
