@@ -5,25 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFprice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="300" Closed="Window_Closed" KeyDown="Window_KeyDown_1" Loaded="Window_Loaded">
+        Title="MainWindow" Height="400" Width="250" Closed="Window_Closed" KeyDown="Window_KeyDown_1" Loaded="Window_Loaded">
     <Grid>
+        <!-- 定義格子 -->
         <Grid.RowDefinitions>
             <RowDefinition Height="40"></RowDefinition>
             <RowDefinition></RowDefinition>
-            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
         </Grid.RowDefinitions>
 
 
-
+        <!--項目清單-->
         <StackPanel x:Name="toDoList" Grid.Row="1"></StackPanel>
 
-
-
+        <!--底部設計-->
         <Grid Grid.Row="2" Background="SteelBlue">
-            <Button Width="30" Height="30" HorizontalAlignment="Left" Margin="5" x:Name="add" Click="addbutton_Click" ></Button>
-            <StackPanel Width="150" HorizontalAlignment="Right" Orientation="Vertical" Height="49">
-                <TextBlock HorizontalAlignment="Right" Height="15" Margin="5 5 10 0" FontSize="12" Foreground="White">總支出</TextBlock>
-                <TextBlock HorizontalAlignment="Right" Height="25" FontSize="20" Margin="0 2 10 0" Foreground="White" x:Name="totalPrice" >0</TextBlock>
+            
+            <!--增加項目按鈕-->
+            <Grid Width="40" Height="40" HorizontalAlignment="Left" Margin="5" x:Name="addItem" MouseDown="addItem_MouseDown">
+                <Border CornerRadius="5" Background="White" BorderBrush="LightGray" BorderThickness="2"></Border>
+                <TextBlock FontSize="40" Height="40" Width="40" VerticalAlignment="Center" TextAlignment="Center" Foreground="SteelBlue" Margin="0,-7,0,7" >+</TextBlock>
+            </Grid>
+            
+            <!--總支出顯示-->
+            <StackPanel Width="150" HorizontalAlignment="Right" Orientation="Vertical" Height="56">
+                <TextBlock HorizontalAlignment="Right" Height="15" Margin="5 2 10 0" FontSize="12" Foreground="White">總支出</TextBlock>
+                <TextBlock HorizontalAlignment="Right" Height="40" FontSize="35" Margin="0 -6 10 0" Foreground="White" x:Name="totalPrice" TextAlignment="Center" >0</TextBlock>
             </StackPanel>
         </Grid>
     </Grid>

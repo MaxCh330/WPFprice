@@ -20,22 +20,26 @@ namespace WPFprice
     /// </summary>
     public partial class item : UserControl
     {
+
         public item()
         {
             InitializeComponent();
         }
-
+       
+       // 封裝屬性：價格數值
        public int itemPriceValue
        {
             get
             {
+                //嘗試解析價格
                 try
                 {
                     return int.Parse(itemPrice.Text);
                 }
+                //失敗後要求用家輸入數字
                 catch
                 {
-                    MessageBox.Show("Plese enter the number");
+                    MessageBox.Show("請輸入數字");
                     return 0;
                 }
             }
@@ -44,10 +48,5 @@ namespace WPFprice
                 itemPrice.Text = value.ToString();
             }
        }
-
-        private void itemPrice_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
-        {
-
-        }
     }
 }
