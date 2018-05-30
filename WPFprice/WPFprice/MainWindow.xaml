@@ -22,7 +22,7 @@
         <Grid Grid.Row="2" Background="SteelBlue">
             
             <!--增加項目按鈕-->
-            <Grid Width="40" Height="40" HorizontalAlignment="Left" Margin="5" x:Name="addItem" MouseDown="addItem_MouseDown">
+            <Grid Width="40" Height="40" HorizontalAlignment="Left" Margin="10" x:Name="addItem" MouseDown="addItem_MouseDown">
                 <Border CornerRadius="5" Background="White" BorderBrush="LightGray" BorderThickness="2"></Border>
                 <TextBlock FontSize="40" Height="40" Width="40" VerticalAlignment="Center" TextAlignment="Center" Foreground="SteelBlue" Margin="0,-7,0,7" >+</TextBlock>
             </Grid>
