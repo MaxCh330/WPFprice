@@ -39,14 +39,13 @@ namespace WPFprice
                 string data = "";
 
                 //每一種資料以"|"區隔加入data字串
-                data += item.day + "|" + item.itemName + "|" + item.itemPrice + "\r\n";
+                data += item.day.Text + "|" + item.itemName.Text + "|" + item.itemPrice.Text;
                 
                 //加入Datas的陣列
                 datas.Add(data);
             }
-            
 
-            System.IO.File.WriteAllLines(@"D:\SaveDataTest", datas);
+            System.IO.File.WriteAllLines(@"C:\temp\data.txt", datas);
         }
 
         //按鍵事件
@@ -68,6 +67,7 @@ namespace WPFprice
                 //顯示價格
                 totalPrice.Text = CtotalPrice.ToString();
             }
+            
         }
 
         //打開視窗事件
@@ -84,6 +84,8 @@ namespace WPFprice
                 
                 // 建立 TodoItem
                 item item = new item();
+                
+                //分別讀取不同部份
                 item.day.Text = parts[0];
                 item.itemName.Text = parts[1];
                 item.itemPrice.Text = parts[2];

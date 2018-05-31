@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:WPFprice"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="300">
-    <Grid Background="White" Height="30">
+    
+    <Grid Background="White" Height="30" x:Name="HoleItem">
         
         <!-- 定義格子 -->
         <Grid.ColumnDefinitions>
@@ -24,7 +25,7 @@
         <TextBox x:Name="itemName" Grid.Column="1" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" BorderThickness="0">New Task</TextBox>
 
         <!-- 價錢框 -->
-        <TextBox x:Name="itemPrice" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" BorderThickness="0" Margin="5 5 10 5" Foreground="SkyBlue" DataContextChanged="itemPrice_DataContextChanged" >0</TextBox>
+        <TextBox x:Name="itemPrice" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" BorderThickness="0" Margin="5 5 10 5" Foreground="SkyBlue">0</TextBox>
 
     </Grid>
 </UserControl>

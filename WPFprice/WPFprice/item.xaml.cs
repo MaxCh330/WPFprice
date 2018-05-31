@@ -48,5 +48,6 @@ namespace WPFprice
                 itemPrice.Text = value.ToString();
             }
        }
+
     }
 }

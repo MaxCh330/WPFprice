@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFprice"
         mc:Ignorable="d"
-        Title="MainWindow" Height="400" Width="250" Closed="Window_Closed" KeyDown="Window_KeyDown_1" Loaded="Window_Loaded">
+        Title="MainWindow" Height="400" Width="250" Closed="Window_Closed" KeyDown="Window_KeyDown_1" >
     <Grid>
         <!-- 定義格子 -->
         <Grid.RowDefinitions>
