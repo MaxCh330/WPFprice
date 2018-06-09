@@ -49,5 +49,17 @@ namespace WPFprice
             }
        }
 
+        // 自訂刪除事件
+        public event EventHandler DeleteItem;
+
+        // 項目價錢鍵盤按下事件
+        private void itemPrice_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            // 任務空白，而且按下 Backspace 鍵時，引發 DeleteItem 事件
+            if (itemPrice.Text == "" && e.Key == Key.Back)
+            {
+                DeleteItem(this, null);
+            }
+        }
     }
 }

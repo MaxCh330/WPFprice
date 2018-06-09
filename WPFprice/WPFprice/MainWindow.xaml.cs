@@ -45,7 +45,7 @@ namespace WPFprice
                 datas.Add(data);
             }
 
-            System.IO.File.WriteAllLines(@"C:\temp\data.txt", datas);
+            System.IO.File.WriteAllLines(@"C:\data.txt", datas);
         }
 
         //按鍵事件
@@ -74,7 +74,7 @@ namespace WPFprice
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // 開檔
-            string[] lines = System.IO.File.ReadAllLines(@"C:\temp\data.txt");
+            string[] lines = System.IO.File.ReadAllLines(@"C:\data.txt");
             
             // 分析每一行
             foreach (string line in lines)
@@ -100,9 +100,15 @@ namespace WPFprice
         {
             // 產生項目
             item item = new item();
+            item.DeleteItem += new EventHandler(DeleteItem);
 
             //放到清單中
             toDoList.Children.Add(item);
+        }
+        // 刪除事件
+        private void DeleteItem(object sender, EventArgs e)
+        {
+            toDoList.Children.Remove((item)sender);
         }
     }
 }
